@@ -63,6 +63,7 @@ namespace SinglyLinkedList
                     previous = current;
                     break;
                 }
+                current = current.Next;
             }
             previous.Next = newNode;
             newNode.Next = node;
@@ -101,14 +102,13 @@ namespace SinglyLinkedList
         {
             if (count == 1) Head = null;
             Head = Head.Next;
-            Head = null;
             count--;
         }
         public void RemoveLast()
         {
             if (count == 1) Head = null;
             var current = Head;
-            while (current.Next != null)
+            while (current != null)
             {
                 if (current.Next.Next == null)
                 {
@@ -116,6 +116,7 @@ namespace SinglyLinkedList
                     count--;
                     return;
                 }
+                current = current.Next;
             }
         }
         public void Clear()
