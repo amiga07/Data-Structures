@@ -6,22 +6,22 @@ namespace SinglyLinkedList
 {
     public class MySinglyLinkedList<T>
     {
-        public Node<T> Head;
+        private Node<T> Head;
         private int count = 0;
 
-        public void Print()
+        public string Print()
         {
+            var res = "";
             if (count != 0)
             {
                 var current = Head;
-                var res = string.Empty;
                 while (current != null)
                 {
                     res += current.Value + " ";
                     current = current.Next;
-                }
-                Console.WriteLine(res);
+                };
             }
+            return res;
         }
         public void AddFirst(T item)
         {
