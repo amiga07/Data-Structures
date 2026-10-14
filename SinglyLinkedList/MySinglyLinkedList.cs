@@ -33,14 +33,14 @@ namespace SinglyLinkedList
             Head = newNode;
             count++;
         }
-        public void AddLast(T item)
+        public Node<T> AddLast(T item)
         {
             var newNode = new Node<T>(item);
             if (count == 0)
             {
                 Head = newNode;
                 count++;
-                return;
+                return Head;
             }
             var current = Head;
             while (current.Next != null)
@@ -50,6 +50,7 @@ namespace SinglyLinkedList
             current.Next = newNode;
             newNode.Next = null;
             count++;
+            return newNode;
         }
         public void AddBefore(Node<T> node, T item)
         {

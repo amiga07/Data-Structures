@@ -6,6 +6,7 @@ namespace List
     {
         static void Main(string[] args)
         {
+            var dict = new Dictionary<int, int>();
             var list = new MyList<int>();
             list.Add(1);
             list.Add(2);

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace List
@@ -41,6 +42,17 @@ namespace List
             }
             _factualCount--;
         }
+        public string Print()
+        {
+            var res = "";
+            var count = 0;
+            while (count <= _factualCount)
+            {
+                res += _array[count] + " ";
+                count++;
+            }
+            return res;
+        }
         public bool Remove(T elem)
         {
             var index = -1;
@@ -77,7 +89,28 @@ namespace List
             {
                 throw new IndexOutOfRangeException();
             }
-            _array[index] = item;
+            if (_factualCount + 1 < _array.Length)
+            {
+                for (int i = index + 1; i < _factualCount + 1; i++)
+                {
+                    _array[i] = _array[i + 1];
+                }
+                var elem = _array[index];
+            }
+            else
+            {
+                var newArray = new T[_array.Length * 2];
+                for (int i = 0; i < index; i++)
+                {
+                    newArray[i] = _array[i];
+                }
+                newArray[index] = item;
+                for (int i = index; i < _array.Length; i++)
+                {
+                    newArray[i + 1] = _array[i];
+                }
+                _array = newArray;
+            }
         }
         public IEnumerator<T> GetEnumerator()
         {

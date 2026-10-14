@@ -1,5 +1,7 @@
 <Solution>
   <Project Path="DataStructures/List.csproj" />
+  <Project Path="Dictionary/Dictionary.csproj" Id="dcb2d6cb-27e5-469f-aa01-9d7e43bb428f" />
+  <Project Path="DoubleLinkedCycledListWithATail/DoubleLinkedCycledListWithATail.csproj" Id="d48be933-9f14-4860-a322-0991340f6a34" />
   <Project Path="SinglyLinkedList/SinglyLinkedList.csproj" Id="2080d8d6-e860-4a86-8278-3aa1ef2541e4" />
   <Project Path="TestProject1/TestProject1.csproj" Id="774d19b6-dbce-4ddf-a980-cef743974b73" />
 </Solution>
