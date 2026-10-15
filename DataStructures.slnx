@@ -2,6 +2,9 @@
   <Project Path="DataStructures/List.csproj" />
   <Project Path="Dictionary/Dictionary.csproj" Id="dcb2d6cb-27e5-469f-aa01-9d7e43bb428f" />
   <Project Path="DoubleLinkedCycledListWithATail/DoubleLinkedCycledListWithATail.csproj" Id="d48be933-9f14-4860-a322-0991340f6a34" />
+  <Project Path="HashSet/HashSet.csproj" Id="0a810a55-52bd-43ae-a554-4292fd10fd2d" />
+  <Project Path="Queue/Queue.csproj" Id="ada9f9b4-df81-4d0b-9d95-f0e247281d38" />
   <Project Path="SinglyLinkedList/SinglyLinkedList.csproj" Id="2080d8d6-e860-4a86-8278-3aa1ef2541e4" />
+  <Project Path="Stack/Stack.csproj" Id="b8990912-7a93-4a92-86fd-5da0c36f826f" />
   <Project Path="TestProject1/TestProject1.csproj" Id="774d19b6-dbce-4ddf-a980-cef743974b73" />
 </Solution>

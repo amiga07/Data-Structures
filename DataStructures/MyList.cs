@@ -46,7 +46,7 @@ namespace List
         {
             var res = "";
             var count = 0;
-            while (count <= _factualCount)
+            while (count < Count)
             {
                 res += _array[count] + " ";
                 count++;

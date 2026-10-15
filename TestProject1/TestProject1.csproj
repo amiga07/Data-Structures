@@ -19,7 +19,11 @@
   <ItemGroup>
     <ProjectReference Include="..\DataStructures\List.csproj" />
     <ProjectReference Include="..\Dictionary\Dictionary.csproj" />
+    <ProjectReference Include="..\DoubleLinkedCycledListWithATail\DoubleLinkedCycledListWithATail.csproj" />
+    <ProjectReference Include="..\HashSet\HashSet.csproj" />
+    <ProjectReference Include="..\Queue\Queue.csproj" />
     <ProjectReference Include="..\SinglyLinkedList\SinglyLinkedList.csproj" />
+    <ProjectReference Include="..\Stack\Stack.csproj" />
   </ItemGroup>
 
   <ItemGroup>
